@@ -10,8 +10,62 @@ body {
 
 article {
   color: #343842;
-	min-height: calc(100vh - 50px);
+	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+}
+
+
+
+/*GENERAL STYLES*/
+.zind-2 {
+	z-index: 2;
+}
+
+
+
+/*MAIN*/
+.carousel {
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.carousel-text {
+	position: absolute;
+	right: 15%;
+	bottom: 20rem;
+	left: 15%;
+	padding-top: 1.25rem;
+	padding-bottom: 1.25rem;
+	color: black;
+	text-align: center;
+}
+
+.carousel-caption {
+	bottom: 6rem;
+}
+
+.main-contact {
+	position: absolute;
+	top: 75%;
+	width: 100%;
+}
+
+.main-contact h5{
+	text-align: center;
+}
+
+
+
+/*FOOTER*/
+footer {
+	text-align: center;
+	position: relative;
+}
+
+footer img {
+	height: 20px;
+	width: 20px;
 }
