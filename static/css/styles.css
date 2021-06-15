@@ -1,5 +1,4 @@
 html {
-	min-height: 100%;
 	font-size: 16px;
 }
 
@@ -10,12 +9,21 @@ body {
 
 article {
   color: #343842;
-	min-height: 100vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
 }
 
+h1,
+h2,
+h4 {
+	font-family: 'Ruda', sans-serif;
+	font-weight: 400;
+}
+
+h3,
+h5,
+h6 {
+	font-family: 'Roboto Slab', serif;
+	font-weight: 400;
+}
 
 
 /*GENERAL STYLES*/
@@ -24,12 +32,36 @@ article {
 }
 
 
+/*NAVIGATION*/
+.navbar {
+	padding: 1.25rem 0.5rem 0.5rem 0.5rem;
+}
+.current a {
+	font-weight: 600;
+	text-decoration: underline;
+}
+
+.dropdown-menu a {
+	font-weight: 400;
+	text-decoration: none;
+}
+
 
 /*MAIN*/
 .carousel {
 	position: absolute;
 	top: 0;
+	bottom: 0;
+	height: 100%;
 	width: 100%;
+}
+
+.carousel img {
+	height: 100%;
+}
+
+.carousel-item {
+	transition: transform .9s ease-in-out;
 }
 
 .carousel-text {
@@ -59,10 +91,14 @@ article {
 
 
 
+
 /*FOOTER*/
 footer {
-	text-align: center;
-	position: relative;
+	height: 32px;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: end;
 }
 
 footer img {
