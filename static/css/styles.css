@@ -1,5 +1,6 @@
 html {
 	font-size: 16px;
+	min-height: 100%;
 }
 
 body {
@@ -26,10 +27,12 @@ h6 {
 }
 
 
+
 /*GENERAL STYLES*/
 .zind-2 {
 	z-index: 2;
 }
+
 
 
 /*NAVIGATION*/
@@ -45,6 +48,7 @@ h6 {
 	font-weight: 400;
 	text-decoration: none;
 }
+
 
 
 /*MAIN*/
@@ -89,18 +93,61 @@ h6 {
 	text-align: center;
 }
 
+.main-contact a {
+	color: black;
+	text-decoration: none;
+}
+
+
+
+/*ABOUT*/
+
+
+
+
+/*SERVICES*/
+
+
+
+
+/*PRICING*/
+
+
+
+
+/*PORTFOLIO*/
+.portfolio-container {
+	height: 400px;
+	background-color: blueviolet;
+	border: 1px solid white;
+}
+
+
+
+/*CONTACT*/
+
+
 
 
 
 /*FOOTER*/
+.main-footer,
 footer {
 	height: 32px;
+	width: 100%;
+}
+
+footer {
+	text-align: center;
+}
+
+.main-footer {
 	position: absolute;
 	bottom: 0;
-	width: 100%;
 	text-align: end;
 }
 
+.main-footer img,
 footer img {
 	height: 20px;
 	width: 20px;
