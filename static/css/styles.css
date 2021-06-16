@@ -6,6 +6,7 @@ html {
 body {
 	margin: 0;
   padding: 0;
+	font-family: 'Roboto Slab', serif;
 }
 
 article {
@@ -14,16 +15,20 @@ article {
 
 h1,
 h2,
-h4 {
+h4,
+h5 {
 	font-family: 'Ruda', sans-serif;
 	font-weight: 400;
 }
 
 h3,
-h5,
 h6 {
 	font-family: 'Roboto Slab', serif;
 	font-weight: 400;
+}
+
+h1 {
+	font-size: 2.75rem;
 }
 
 
@@ -38,16 +43,50 @@ h6 {
 /*NAVIGATION*/
 .navbar {
 	padding: 1.25rem 0.5rem 0.5rem 0.5rem;
+	font-family: 'Ruda', sans-serif;
+	font-weight: 500;
 }
+
+.nav-link {
+	color: #FFF !important;
+	text-shadow: 1px 1px 1px #000;
+}
+
 .current a {
 	font-weight: 600;
 	text-decoration: underline;
 }
 
-.dropdown-menu a {
-	font-weight: 400;
-	text-decoration: none;
+.btn-outline-success {
+	color: #FFF;
+	border: 2px solid #FFF;
 }
+
+
+
+.btn-outline-success:hover {
+	color: #FFF;
+	background-color: #EB6417;
+	border: 2px solid #EB6417;
+}
+
+.btn-outline-success:active {
+	color: #FFF;
+	background-color: #EB6417;
+	border: 2px solid #EB6417;
+	box-shadow: 0 0 0 0.25rem rgba(184, 79, 18, 0.5);
+}
+
+.btn-outline-success:focus {
+	box-shadow: 0 0 0 0.25rem rgba(184, 79, 18, 0.5);
+}
+
+#nav-logo {
+	height: 50px;
+	width: 50px;
+}
+
+
 
 
 
@@ -70,11 +109,11 @@ h6 {
 
 .carousel-text {
 	position: absolute;
-	right: 15%;
-	bottom: 20rem;
-	left: 15%;
-	padding-top: 1.25rem;
-	padding-bottom: 1.25rem;
+	bottom: 25%;
+	width: 100%;
+	height: 50%;
+	padding: 1.5rem;
+	background-color: rgba(200, 210, 222, 0.5);
 	color: black;
 	text-align: center;
 }
@@ -83,21 +122,94 @@ h6 {
 	bottom: 6rem;
 }
 
+.carousel-text h3 {
+	text-align: start;
+}
+
+.carousel-third h3 {
+	padding-bottom: 20%;
+}
+
+.carousel-fifth h1 {
+	padding-top: 15%;
+}
+
+.carousel-sixth h3 {
+	padding-bottom: 15%;
+	padding-right: 40%;
+}
+
+.carousel-seventh h1 {
+	padding-top: 15%;
+}
+
+.main-text h1 {
+	font-size: 7rem;
+	font-weight: 900;
+	color: #B84F12;
+	text-shadow: 1px 1px 1px #112438;
+}
+
+.main-text h2 {
+	background-color: rgba(17, 36, 56, 0.35);
+	border-radius: 1%;
+	font-weight: 500;
+	color: #FFF;
+	text-shadow: 1px 0 0 #112438, 0 1px 0 #112438, -1px 0 0 #112438, 0 -1px 0 #112438;
+}
+
 .main-contact {
 	position: absolute;
-	top: 75%;
+	top: 80%;
 	width: 100%;
 }
 
-.main-contact h5{
+.main-contact {
 	text-align: center;
 }
 
-.main-contact a {
-	color: black;
-	text-decoration: none;
+
+
+.main-contact img {
+	width: 50px;
 }
 
+@media only screen and (min-width: 992px) {
+	.carousel-text {
+		background-color: rgba(200, 210, 222, 0);
+	}
+
+	.center-top,
+	.left-top {
+		bottom: 55%;
+	}
+
+	.center-top {
+		padding: 1.5rem 30rem;
+	}
+
+	.right-middle {
+		padding-left: 45rem;
+	}
+
+	.right-bottom {
+		text-align: end;
+		bottom: 30%;
+		padding-right: 3rem;
+	}
+
+	.left-top {
+		text-align: start;
+		padding-left: 23%;
+	}
+
+	.left-middle {
+		padding-right: 45rem;
+	}
+	
+
+
+}
 
 
 /*ABOUT*/
@@ -122,6 +234,13 @@ h6 {
 	border: 1px solid white;
 }
 
+.card {
+	height: 370px;
+	background-color: yellow;
+	border: 1px dashed black;
+	margin-top: 15px;
+}
+
 
 
 /*CONTACT*/
@@ -139,16 +258,25 @@ footer {
 
 footer {
 	text-align: center;
+	padding-top: 5px;
+	height: 30px;
+}
+
+.main-footer span,
+footer span {
+	font-style: italic;
+	font-size: 0.75rem;
 }
 
 .main-footer {
 	position: absolute;
 	bottom: 0;
 	text-align: end;
+	color: #FFF;
 }
 
 .main-footer img,
 footer img {
-	height: 20px;
-	width: 20px;
+	height: 25px;
+	width: 25px;
 }
