@@ -1,3 +1,11 @@
+/*
+font-family: 'Ruda', sans-serif;
+
+font-family: 'Prata', serif;
+font-family: 'Lato', sans-serif;
+*/
+
+
 html {
 	font-size: 16px;
 	min-height: 100%;
@@ -6,7 +14,7 @@ html {
 body {
 	margin: 0;
   padding: 0;
-	font-family: 'Roboto Slab', serif;
+	font-family: 'Lato', sans-serif;
 }
 
 article {
@@ -17,13 +25,13 @@ h1,
 h2,
 h4,
 h5 {
-	font-family: 'Ruda', sans-serif;
+	font-family: 'Prata', serif;
 	font-weight: 400;
 }
 
 h3,
 h6 {
-	font-family: 'Roboto Slab', serif;
+	font-family: 'Lato', sans-serif;
 	font-weight: 400;
 }
 
@@ -57,13 +65,25 @@ h3 {
 /*NAVIGATION*/
 .navbar {
 	padding: 1.25rem 0.5rem 0.5rem 0.5rem;
-	font-family: 'Ruda', sans-serif;
+	font-family: 'Lato', sans-serif;
 	font-weight: 500;
 }
 
 .nav-link {
 	color: #FFF !important;
 	text-shadow: 1px 1px 1px #000;
+}
+
+.nav-link:visited {
+	color: #C8D2DE !important;
+}
+
+.nav-link:hover {
+	color: #EB6417 !important;
+}
+
+.nav-link:active {
+	color: #B84F12 !important;
 }
 
 .current a {
@@ -146,31 +166,31 @@ h3 {
 
 .carousel-text h3 {
 	text-align: center;
-	color: #314152;
-	text-shadow: 1px 0 0 #C8D2DE, 0 1px 0 #C8D2DE, -1px 0 0 #C8D2DE, 0 -1px 0 #C8D2DE;
-	background-color: rgba(255, 255, 255, 0.4);
+	color: #112438;
+	background-color: rgba(255, 255, 255, 0.6);
 	padding: 1rem;
+	border-radius: 5px;
 }
 
 .main-text h1 {
-	font-size: 5rem;
+	font-family: 'Ruda', sans-serif;
 	font-weight: 900;
-	color: #B84F12;
+	font-size: 5rem;
+	color: #EB6417;
 	text-shadow: 1px 1px 1px #112438;
 }
 
 .main-text h2 {
-	background-color: rgba(17, 36, 56, 0.35);
-	border-radius: 1%;
-	font-weight: 500;
+	background-color: rgba(31, 60, 92, 0.4);
+	border-radius: 5px;
 	color: #FFF;
 	text-shadow: 1px 0 0 #112438, 0 1px 0 #112438, -1px 0 0 #112438, 0 -1px 0 #112438;
-
+	padding: 1rem;
 }
 
 .main-contact {
 	position: absolute;
-	top: 89.5%;
+	bottom: 0;
 	width: 100%;
 	padding: 1rem;
 }
@@ -181,7 +201,11 @@ h3 {
 
 @media only screen and (min-width: 992px) {
 	.main-text h1 {
-		font-size: 7rem;
+		font-size: 9rem;
+	}
+
+	.main-text h2 {
+		font-size: 2.5rem;
 	}
 
 	.carousel-text {
@@ -195,24 +219,62 @@ h3 {
 	.carousel-text h3 {
 		text-align: start;
 		background-color: rgba(255, 255, 255, 0);
-		text-shadow: 1px 1px 1px #CED2DE;
+		font-size: 2.5rem;
+	}
+
+	.carousel-third h3,
+	.carousel-fourth h3,
+	.carousel-fifth h3,
+	.carousel-sixth h3 {
+		text-shadow: 1px 1px 1px #112438;
+	}
+
+	.carousel-second h3,
+	.carousel-seventh h3 {
+		text-shadow: 1px 1px 1px #C8D2DE;
+	}
+
+	.carousel-third h1 {
+		display: block;
+		padding-left: 35%;
 	}
 
 	.carousel-third h3 {
-		padding-bottom: 20%;
+		padding-top: 5%;
+		padding-left: 55%;
+		color: #EB6417;
+		display: block;
+		text-align: center;
+	}
+
+	.carousel-fourth h1 {
+		text-shadow: 1px 1px 1px #000;
+	}
+
+	.carousel-fourth h3 {
+		color: #FFF;
+		padding-right: 25%;
 	}
 
 	.carousel-fifth h1 {
 		padding-top: 15%;
 	}
 
+	.carousel-fifth h3 {
+		color: #FFF;
+	}
+
 	.carousel-sixth h3 {
-		padding-bottom: 15%;
-		padding-right: 40%;
+		padding: 10% 10% 15% 30%;
+		color: #FFF;
 	}
 
 	.carousel-seventh h1 {
 		padding-top: 15%;
+	}
+
+	.carousel-seventh h3 {
+		padding-right: 10%;
 	}
 
 	.main-contact {
