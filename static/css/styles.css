@@ -20,6 +20,7 @@ body {
 
 article {
   color: #FFF;
+	height: 100%;
 }
 
 h1,
@@ -298,7 +299,7 @@ footer {
 
 footer {
 	text-align: center;
-	padding-top: 5px;
+	padding-bottom: 10px;
 	height: 30px;
 }
 
@@ -324,7 +325,7 @@ footer img {
 
 /*ALL PAGES*/
 .pages {
-	margin-top: 2rem;
+	padding: 2rem;
 }
 
 
@@ -371,7 +372,13 @@ footer img {
 
 
 /*CONTACT*/
+@media only screen and (min-width: 992px) {
+	.contact form {
+		width: 50%;
+		margin: 2% 25%;
+		padding: 1.5rem;
+	}
 
-
+}
 
 

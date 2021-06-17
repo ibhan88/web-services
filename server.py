@@ -1,5 +1,5 @@
 import os
-from flask import Flask, request, render_template
+from flask import Flask, request, render_template, flash, redirect
 from flask_sqlalchemy import SQLAlchemy
 from jinja2 import StrictUndefined
 import json
@@ -44,6 +44,20 @@ def contact():
     """Show contact page"""
 
     return render_template("contact.html")
+
+@app.route('/contact-form', methods=['POST'])
+def contact_form():
+    """Handle contact form submission"""
+
+    #UNFINISHED
+    firstname = request.form['firstname']
+    lastname = request.form['lastname']
+    companyname = request.form['companyname']
+    email = request.form['email']
+    description = request.form['description']
+
+    flash('Your inquiry has been successfully submitted.')
+    return redirect('/')
 
 
 

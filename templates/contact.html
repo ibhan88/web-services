@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %} Contact {% endblock%}
+
+{% block body %}
+<div class="container-fluid pages contact">
+  <h1>Contact</h1>
+
+  <form action="/contact-form"  method="POST" class="row g-3">
+    <div class="col-md-6">
+      <label for="fname" class="form-label">First Name</label>
+      <input type="text" class="form-control" id="fname" name="firstname" required>
+    </div>
+    <div class="col-md-6">
+      <label for="lname" class="form-label">Last Name</label>
+      <input type="text" class="form-control" id="lname" name="lastname" required>
+    </div>
+    <div class="col-12">
+      <label for="cname" class="form-label">Company Name</label>
+      <input type="text" class="form-control" id="cname" name="companyname">
+    </div>
+    <div class="col-12">
+      <label for="inputEmail" class="form-label">Email</label>
+      <input type="email" class="form-control" id="inputEmail" name="email" required>
+    </div>
+    <div class="col-12">
+      <label for="desc" class="form-label">Description</label>
+      <textarea type="text" class="form-control" id="desc"  name="description" placeholder="Details of required services" style="height:200px" required></textarea>
+    </div>
+    <div class="col-12">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </form>
+
+</div>
+{% endblock %}
