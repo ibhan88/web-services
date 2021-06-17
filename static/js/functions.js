@@ -16,3 +16,16 @@ $(function() {
     $("footer").css("display", "none");
   }
 });
+
+
+$(document).ready(function(){
+  $(".card").hover(function(){
+    var el = $(this).children().first()
+    el.css("opacity", "0.4"); /*for mouseenter*/ 
+    el.next().css("display", "block");
+    }, function(){
+    var el = $(this).children().first()
+    el.css("opacity", "1"); /*for mouseleave*/
+    el.next().css("display", "none");
+  });
+});
