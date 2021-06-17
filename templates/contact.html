@@ -24,8 +24,17 @@
       <input type="email" class="form-control" id="inputEmail" name="email" required>
     </div>
     <div class="col-12">
+      <label for="inputTier" class="form-label">Tier</label>
+      <select id="inputTier" class="form-select">
+        <option selected>Choose Tier</option>
+        <option>Tier 1 - Basic</option>
+        <option>Tier 2 - Moderate</option>
+        <option>Tier 3 - Advanced</option>
+      </select>
+    </div>
+    <div class="col-12">
       <label for="desc" class="form-label">Description</label>
-      <textarea type="text" class="form-control" id="desc"  name="description" placeholder="Details of required services" style="height:200px" required></textarea>
+      <textarea type="text" class="form-control" id="desc"  name="description" placeholder="Brief description of required services" style="height:200px" required></textarea>
     </div>
     <div class="col-12">
       <button type="submit" class="btn btn-primary">Submit</button>

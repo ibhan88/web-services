@@ -18,9 +18,8 @@ body {
 	background-color: #314152;
 }
 
-article {
+main {
   color: #FFF;
-	height: 100%;
 }
 
 h1,
@@ -326,6 +325,7 @@ footer img {
 /*ALL PAGES*/
 .pages {
 	padding: 2rem;
+	height: 100%;
 }
 
 
