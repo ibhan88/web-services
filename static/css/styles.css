@@ -330,8 +330,21 @@ footer img {
 
 
 /*ABOUT*/
+.about a {
+	color: #EB6417;
+	text-decoration: none;
+}
 
+.about a:hover {
+	color: #EB6417;
+	text-decoration: underline;
+}
 
+.about img {
+	border-radius: 25%;
+	margin-left: 1rem;
+	margin-bottom: 1rem;
+}
 
 
 /*SERVICES*/
