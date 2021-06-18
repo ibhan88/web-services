@@ -8,6 +8,8 @@ import json
 app = Flask(__name__)
 app.secret_key = "SECRET!"
 
+db = SQLAlchemy()
+
 
 @app.route('/')
 def index():
@@ -39,6 +41,17 @@ def portfolio():
 
     return render_template("portfolio.html")
 
+@app.route('/portfolio/<int:project_id>')
+def show_project(project_id):
+    """Show detailed portfolio page for each project"""
+
+    sql = "SELECT * FROM portfolio WHERE project_id = :project_id"
+
+    cursor = db.session.execute(sql, {"project_id": project_id})
+    project = cursor.fetchone()
+
+    return render_template("project.html", project=project)
+
 @app.route('/contact')
 def contact():
     """Show contact page"""
@@ -62,8 +75,19 @@ def contact_form():
 
 
 ################################################
+def connect_to_db(app):
+    """Connect to database"""
+
+    app.config["SQLALCHEMY_DATABASE_URI"] = "postgresql:///portfolio"
+    app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
+    db.app = app
+    db.init_app(app)
+
 if __name__ == "__main__":
     app.debug = True
     app.run(host="0.0.0.0")
+
+
+connect_to_db(app)  
 
 

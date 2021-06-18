@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %} Portfolio: {{ project.title }} {% endblock%}
+
+{% block body %}
+<div class="container-fluid pages project">
+  <h2>{{ project.title }}</h2>
+  <a href="{{ project.project_link }}"><h3>Go to Website</h3></a>
+  <div class="row screenshots">
+    {% for p in project.images %}
+      <div class="col-12 col-md-6 col-lg-4 img-container">
+        <img class="img-fluid" src="../static/img/{{ p }}" alt="...">  
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+{% endblock %}

@@ -12,8 +12,9 @@ $(function() {
 
 $(function() {
   var page = document.getElementsByTagName("title");
-  if (page[0].innerHTML == " Home ") {
+  if (page[0].innerHTML == " Iris B. Han ") {
     $("footer").css("display", "none");
+    $("nav").css("background-color", "transparent");
   }
 });
 
@@ -22,10 +23,10 @@ $(document).ready(function(){
   $(".card").hover(function(){
     var el = $(this).children().first()
     el.css("opacity", "0.4"); /*for mouseenter*/ 
-    el.next().css("display", "block");
+    el.next().children().first().css("display", "block");
     }, function(){
     var el = $(this).children().first()
     el.css("opacity", "1"); /*for mouseleave*/
-    el.next().css("display", "none");
+    el.next().children().first().css("display", "none");
   });
 });
