@@ -453,8 +453,43 @@ footer img {
 }
 
 /*SERVICES*/
+.serv-container {
+	height: 500px;
+	background-color: red;
+	border: 1px solid white;
+	text-align: center;
+}
 
+.serv-text {
+	margin-top: 25%;
+	padding: 0 1rem;
+}
 
+.serv-container h2 {
+	font-size: 4rem;
+}
+
+.serv-container h3 {
+	font-size: 2rem;
+}
+
+@media only screen and (min-width: 768px) {
+	.serv-text {
+		margin-top: 35%;
+	}
+
+	.serv-container h2 {
+		font-size: 3rem;
+	}
+	
+	.serv-container h3 {
+		font-size: 1.75rem;
+	}
+}
+
+@media only screen and (min-width: 992px) {
+
+}
 
 
 /*PRICING*/
