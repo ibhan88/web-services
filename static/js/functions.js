@@ -30,3 +30,20 @@ $(document).ready(function(){
     el.next().children().first().css("display", "none");
   });
 });
+
+
+$(window).scroll(function() {
+    var t = document.getElementById("returnTop");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    $(t).css("display", "block");
+    } else {
+    $(t).css("display", "none");
+    }
+});
+
+
+function topFunction() {
+  document.body.scrollTop = 0; //Safari
+  document.documentElement.scrollTop = 0; //Chrome, Firefox, IE, Opera
+}
+

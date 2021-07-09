@@ -5,7 +5,10 @@
 {% block body %}
 <div class="container-fluid pages project">
   <h2>{{ project.title }}</h2>
-  <a href="{{ project.project_link }}"><h3>Go to Website</h3></a>
+  <div class="links-container justify-content-between">
+    <a href="{{ project.project_link }}"><h3>Go to Website</h3></a>
+    <a href="\portfolio"><h3>Back to Portfolio</h3></a>
+  </div>
   <div class="row screenshots">
     {% for p in project.images %}
       <div class="col-12 col-md-6 col-lg-4 img-container">

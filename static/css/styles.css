@@ -16,7 +16,6 @@ body {
   padding: 0;
 	font-family: 'Lato', sans-serif;
 	background-color: #314152;
-	height: 100%;
 }
 
 main {
@@ -62,6 +61,60 @@ h3 {
 	z-index: 2;
 }
 
+.btn-first,
+.btn-first:hover,
+.btn-first:focus,
+.btn-first:active,
+.btn-second,
+.btn-second:hover,
+.btn-second:focus,
+.btn-second:active {
+	color: #FFF;
+}
+
+
+
+.btn-first {
+	background-color: #EB6417;
+	border-color: #EB6417;
+}
+
+.btn-first:hover {
+	background-color: #B84F12;
+	border-color: #B84F12;
+}
+
+.btn-first:focus {
+	background-color: #EB6417;
+	border-color: #EB6417;
+	box-shadow: 0 0 0 0.25rem rgba(219, 150, 71, 0.5);
+}
+
+.btn-first:active {
+	background-color: #B84F12;
+	border-color: #B84F12;
+}
+
+.btn-second {
+	background-color: #112438;
+	border-color: #112438;
+}
+
+.btn-second:hover {
+	background-color: #506985;
+	border-color: #506985;
+}
+
+.btn-second:focus {
+	background-color: #112438;
+	border-color: #112438;
+	box-shadow: 0 0 0 0.25rem rgba(29, 29, 53, 0.418);
+}
+
+.btn-second:active {
+	background-color: #506985;
+	border-color: #506985;
+}
 
 
 /*NAVIGATION*/
@@ -124,6 +177,14 @@ h3 {
 	width: 50px;
 }
 
+.navbar-toggler {
+	border: none;
+}
+
+.navbar-toggler-icon {
+	width: 2.5em;
+	height: 2.5em;
+}
 
 
 /*MAIN*/
@@ -164,10 +225,16 @@ h3 {
 	bottom: 6rem;
 }
 
+.carousel-text h3,
+.main-text h2 {
+	font-size: 2.5rem;
+}
+
 .carousel-text h1 {
 	color: #FFF;
 	display: block;
 	text-shadow: 1px 1px 1px #112438;
+	font-size: 5rem;
 }
 
 .carousel-text h3 {
@@ -176,12 +243,24 @@ h3 {
 	background-color: rgba(255, 255, 255, 0.6);
 	padding: 1rem;
 	border-radius: 5px;
+	display: block;
+}
+
+.carousel-fourth h1,
+.carousel-fifth h1,
+.carousel-sixth h1 {
+	font-size: 4.5rem;
+}
+
+.carousel-seventh h1 {
+	color: #112438;
+	text-shadow: 1px 1px 1px #506985;
 }
 
 .main-text h1 {
 	font-family: 'Ruda', sans-serif;
 	font-weight: 900;
-	font-size: 5rem;
+	font-size: 6.5rem;
 	color: #EB6417;
 	text-shadow: 1px 1px 1px #112438;
 }
@@ -274,14 +353,12 @@ h3 {
 		color: #FFF;
 	}
 
-	.carousel-seventh h1,
 	.carousel-seventh h3 {
 		text-shadow: 1px 1px 1px #506985;
 	}
 
 	.carousel-seventh h1 {
 		padding-top: 15%;
-		color: #112438;
 	}
 
 	.carousel-seventh h3 {
@@ -329,6 +406,14 @@ footer img {
 	height: 25px;
 	width: 25px;
 }
+
+#returnTop {
+	position: fixed;
+	right: 20px;
+	bottom: 15px;
+	display: none;
+}
+
 
 
 
@@ -468,12 +553,21 @@ footer img {
 }
 
 .project h3 {
-	font-size: 1.5rem;
+	font-size: 1.25rem;
 	padding-left: 0.35rem;
 }
 
-.project img {
+.project a {
+	text-decoration: none;
+	color: #EB6417;
+}
 
+.project a:hover {
+	text-decoration: underline;
+}
+
+.project a:active {
+	color: #B84F12;
 }
 
 .project .screenshots {
@@ -483,6 +577,12 @@ footer img {
 .project .img-container {
 	padding-bottom: calc(var(--bs-gutter-x));
 }
+
+.project .links-container {
+	display: inline-flex;
+	width: 100%;
+}
+
 
 
 /*CONTACT*/
