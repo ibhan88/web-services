@@ -455,14 +455,14 @@ footer img {
 /*SERVICES*/
 .serv-container {
 	height: 500px;
-	background-color: red;
-	border: 1px solid white;
+	background-color: #314152;
 	text-align: center;
 }
 
 .serv-text {
-	margin-top: 25%;
+	margin-top: 24%;
 	padding: 0 1rem;
+	text-shadow: 1px 1px 1px #000;
 }
 
 .serv-container h2 {
@@ -471,6 +471,41 @@ footer img {
 
 .serv-container h3 {
 	font-size: 2rem;
+}
+
+#serv-one,
+#serv-two,
+#serv-three,
+#serv-four,
+#serv-five,
+#serv-six {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#serv-one {
+	background-image: url("../img/services/pexels-karolina-grabowska-4040651.jpg");
+}
+
+#serv-two {
+	background-image: url("../img/services/pexels-adrien-olichon-2387793.jpg");
+}
+
+#serv-three {
+	background-image: url("../img/services/pexels-djordje-petrovic-4969107.jpg");
+}
+
+#serv-four {
+	background-image: url("../img/services/pexels-matheus-natan-1813392.jpg");
+}
+
+#serv-five {
+	background-image: url("../img/services/pexels-martin-péchy-2078266.jpg");
+}
+
+#serv-six {
+	background-image: url("../img/services/pexels-dids-3527795.jpg");
 }
 
 @media only screen and (min-width: 768px) {
