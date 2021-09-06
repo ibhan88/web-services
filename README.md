@@ -21,6 +21,7 @@ The goal was to build a website that showcases products and services to the user
 
 ## <a name="carousel"></a>Main Carousel
 In order to create a website that is more interesting, the use of a image carousel on the main homepage is utilized. The carousel images are set to continuously rotate through.
+![Main](/static/img/wip/carousel.gif)
 
 ## <a name="pages"></a>Pages
 ### About
