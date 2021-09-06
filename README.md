@@ -29,12 +29,19 @@ A summary page about the company or individual offering the web services.
 
 ### Services
 A more descriptive page about the services offered to customers.
+![Services](/static/img/screenshots/services.png)
+
 ### Pricing
 Different levels of pricing are indicated on the page.
+![Pricing](/static/img/screenshots/pricing.png)
+
 ### Portfolio
 The portfolio includes all the individual projects that have been completed. For reference purposes, screenshots of the projects are included once clicked.
+![Portfolio](/static/img/screenshots/portfolio.png)
+
 ### Contact
 A contact form to make general inquiries to the company or individual offering the services.
+![Contact](/static/img/screenshots/contact.png)
 
 ## <a name="data"></a>Data
 A local PostgreSQL database was created in order to save information of the individual projects included in the Portfolio portion of the website.
